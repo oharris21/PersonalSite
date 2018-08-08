@@ -1,3 +1,45 @@
-mainPageHeader {
-  color: red; 
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+.mainPageHeader{
+    font-family: 'Anonymous Pro', monospace;
+    color: rgba(255,255,255,.75);
+    position: relative;
+    top: 120px;
+    left: 100%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 600%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
 }
+
+/* Animation */
+.mainPageHeader{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 7em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+body {
+   background-image: url(https://c1.staticflickr.com/9/8531/8537362755_9ed2eae2c2_b.jpg);
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 400px;
+   width: 400px;
+}
+
+/* .myStory {
+  text-height: 300px;
+  text-indent: 200px;
+} */
